@@ -7,3 +7,4 @@ protobuf==4.23.4
 Requests==2.31.0
 selenium==4.11.2
 streamlit==1.25.0
+streamlit_carousel
