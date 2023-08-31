@@ -5,11 +5,13 @@ GOALS_OPTIONS = ["colecionar", "explorar",
                  "decorar", "comprar um presente",
                  "investir", "outro"]
 
-# get list of columns in csv file
-columns_to_drop = ['Size', 'Price', 'Artist', 'Title', 'Image_Url', 'Marketplace']
-df = pd.read_csv('artsoul_dummies.csv').drop(columns=columns_to_drop)
-interests_list = df.columns.tolist()
-INTERESTS_OPTIONS = interests_list
+INTERESTS_OPTIONS = ['Contemporâneo', 'Figurativo', 'Pop', 'Moderno',
+                     'Conceitual', 'Abstrato', 'Retrato', 'Surrealista',
+                     'Outro Tema', 'Paisagem', 'Natureza', 'Clássico',
+                     'Realista', 'Minimalista', 'Expressionista', 'Vintage',
+                     'Streetart', 'Impressionista', 'Pintura', 'Gravura',
+                     'Técnica Mista', 'Outra Técnica', 'Desenho', 'Escultura',
+                     'Fotografia', 'Livro', 'Colorido', 'Monocromático']
 
 INFO_JSON_LIST = [
         {"info_name": "greeting", "question": "Oi! Estou aqui para te ajudar a encontrar o que você ama em arte. Vamos começar?"},
